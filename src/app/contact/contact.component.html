@@ -46,17 +46,20 @@
             </div>
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-light">
+            <form class="p-4 p-md-5 border rounded-3 bg-light" #contactForm="ngForm" (ngSubmit)="onClickSubmit()">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput1" placeholder="PrashanthAnem" required>
-                    <label for="floatingInput1">Name</label>
+                    <input type="text" class="form-control" id="username" placeholder="PrashanthAnem" required name="username" [(ngModel)]="contactModel.name" #username="ngModel">
+                    <label for="username">Name</label>
+                    <div [hidden]="username.valid || username.pristine" class="alert alert-danger">
+                        Name is required
+                    </div>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required name="email" [(ngModel)]="contactModel.email">
                     <label for="floatingInput">Email address</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" id="inputMessage" placeholder="Message" required></textarea>
+                    <textarea class="form-control" id="inputMessage" placeholder="Message" required name="message" [(ngModel)]="contactModel.message"></textarea>
                     <label for="inputMessage">Message</label>
                 </div>
 
