@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-intro-article',
-  templateUrl: './intro-article.component.html',
-  styleUrls: ['./intro-article.component.css']
+  selector: 'intro-article',
+  templateUrl: './intro-article.component.html'
 })
 export class IntroArticleComponent {
 
