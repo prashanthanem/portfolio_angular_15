@@ -4,10 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavmenuComponent } from './navmenu/navmenu.component';
-import { ImgCarouselComponent } from './img-carousel/img-carousel.component';
+import { CarouselComponent } from './carousel/carousel.component';
 import { IntroArticleComponent } from './intro-article/intro-article.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ExperienceComponent } from './experience/experience.component';
+import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
@@ -16,10 +16,10 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     NavmenuComponent,
-    ImgCarouselComponent,
+    CarouselComponent,
     IntroArticleComponent,
     SkillsComponent,
-    ExperienceComponent,
+    ResumeComponent,
     ContactComponent,
     FooterComponent
   ],

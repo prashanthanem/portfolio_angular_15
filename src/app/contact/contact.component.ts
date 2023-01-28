@@ -3,9 +3,8 @@ import { Contact } from './contact';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  selector: 'contact',
+  templateUrl: './contact.component.html'
 })
 export class ContactComponent {
   @ViewChild('contactForm') form: any;
