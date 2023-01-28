@@ -1,8 +1,8 @@
 <div class="container col-xl-10 col-xxl-8" id="contact">
     <div class="row align-items-center g-lg-5 py-5">
         <div [hidden]="!submitted" class="alert alert-success" role="alert">
-              Hey ! I got your message, Thank you for reaching out to me.
-          </div>
+            Hey ! I got your message, Thank you for reaching out to me.
+        </div>
         <div class="col-lg-7 text-center text-lg-start">
             <h1 class="display-4 fw-bold lh-1 mb-3">Let's Keep In Touch!</h1>
             <p class="col-lg-10 fs-4">Thank you for visiting out my profile. If you would like to get into contact with
@@ -51,23 +51,28 @@
         <div class="col-md-10 mx-auto col-lg-5">
             <form class="p-4 p-md-5 border rounded-3 bg-light" #contactForm="ngForm" (ngSubmit)="onClickSubmit()">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="user_name" placeholder="PrashanthAnem" name="user_name" [(ngModel)]="contactModel.name" required />
+                    <input type="text" class="form-control" id="user_name" placeholder="PrashanthAnem" name="user_name"
+                        [(ngModel)]="contactModel.name" required />
                     <label for="user_name">Name</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="user_email" placeholder="name@example.com" name="user_email" [(ngModel)]="contactModel.email" required />
+                    <input type="email" class="form-control" id="user_email" placeholder="name@example.com"
+                        name="user_email" [(ngModel)]="contactModel.email" required />
                     <label for="user_email">Email address</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" id="message" placeholder="Message" name="message" [(ngModel)]="contactModel.message" required></textarea>
+                    <textarea class="form-control" id="message" placeholder="Message" name="message"
+                        [(ngModel)]="contactModel.message" required></textarea>
                     <label for="message">Message</label>
                 </div>
                 <button class="w-100 btn btn-lg btn-primary" type="submit" [disabled]="!contactForm.form.valid">
-                    <span [hidden]="loading" >Submit</span>
+                    <span [hidden]="loading">Submit</span>
                     <span [hidden]="!loading">Submitting...</span>
-                    <span [hidden]="!loading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <span [hidden]="!loading" class="spinner-border spinner-border-sm" role="status"
+                        aria-hidden="true"></span>
                 </button>
             </form>
         </div>
     </div>
 </div>
+<global-footer></global-footer>

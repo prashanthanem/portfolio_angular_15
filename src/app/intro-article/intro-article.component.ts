@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-intro-article',
-  templateUrl: './intro-article.component.html',
-  styleUrls: ['./intro-article.component.css']
+  standalone: true,
+  selector: 'intro-article',
+  templateUrl: './intro-article.component.html'
 })
 export class IntroArticleComponent {
 

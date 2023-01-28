@@ -1,11 +1,14 @@
 import { Component, ViewChild } from '@angular/core';
 import { Contact } from './contact';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { FooterComponent } from '../footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  imports : [FooterComponent, FormsModule],
+  standalone : true,
+  selector: 'contact',
+  templateUrl: './contact.component.html'
 })
 export class ContactComponent {
   @ViewChild('contactForm') form: any;
