@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 import { NavmenuComponent } from './navmenu/navmenu.component';
-import {RouterLinkWithHref, RouterOutlet} from "@angular/router";
-
+import { RouterLinkWithHref, RouterOutlet } from "@angular/router";
+import { CarouselComponent } from './carousel/carousel.component';
+import { IntroArticleComponent } from './intro-article/intro-article.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 @Component({
-  imports: [NavmenuComponent, RouterLinkWithHref, RouterOutlet],
-  standalone : true,
+  imports: [NavmenuComponent, RouterLinkWithHref, RouterOutlet, CarouselComponent, IntroArticleComponent, SkillsComponent, ResumeComponent, ContactComponent, FooterComponent],
+  standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

@@ -1,11 +1,11 @@
 import { Component, ViewChild } from '@angular/core';
 import { Contact } from './contact';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
-import { FooterComponent } from '../footer/footer.component';
+// import { FooterComponent } from '../footer/footer.component';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  imports : [FooterComponent, FormsModule],
+  imports : [FormsModule],
   standalone : true,
   selector: 'contact',
   templateUrl: './contact.component.html'
