@@ -62,7 +62,7 @@
                 </div>
                 <div class="form-floating mb-3">
                     <textarea class="form-control" id="message" placeholder="Message" name="message"
-                        [(ngModel)]="contactModel.message" required></textarea>
+                        [(ngModel)]="contactModel.message" required style="height: 100px"></textarea>
                     <label for="message">Message</label>
                 </div>
                 <button class="w-100 btn btn-lg btn-primary" type="submit" [disabled]="!contactForm.form.valid">
@@ -75,4 +75,3 @@
         </div>
     </div>
 </div>
-<global-footer></global-footer>
