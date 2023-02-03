@@ -3,14 +3,14 @@
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #4b7dab;
+  color: #65C7F7;
   font-family: "Poppins", sans-serif;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0d6efd;
+  border-left: 2px solid #4364F7;
   position: relative;
 }
 
@@ -18,13 +18,13 @@
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  color: #2c4964;
+  color: #9CECFB;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4ebf3;
+  background: #673AB7;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 400;
